@@ -1,9 +1,5 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import Lenis from "lenis";
-import CountdownGate, {
-  LOCK_ENABLED,
-  RAKHI_DATE,
-} from "@/components/CountdownGate";
 import Hero from "@/components/Hero";
 import EditorialMarquee from "@/components/EditorialMarquee";
 import Chapters from "@/components/Chapters";
@@ -16,13 +12,6 @@ const GRAIN =
   "url(\"data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E\")";
 
 function App() {
-  const [unlocked, setUnlocked] = useState(
-    () =>
-      !LOCK_ENABLED ||
-      new URLSearchParams(window.location.search).has("preview") ||
-      Date.now() >= RAKHI_DATE.getTime(),
-  );
-
   useEffect(() => {
     const lenis = new Lenis({ lerp: 0.08 });
     let rafId;
@@ -44,18 +33,13 @@ function App() {
         className="pointer-events-none fixed inset-0 z-[70] opacity-[0.05] mix-blend-multiply"
         style={{ backgroundImage: GRAIN }}
       />
-      {!unlocked && <CountdownGate onUnlock={() => setUnlocked(true)} />}
-      {unlocked && (
-        <>
-          <Hero />
-          <EditorialMarquee />
-          <Chapters />
-          <Gallery />
-          <Footer />
-          <Surprise />
-          <MusicToggle />
-        </>
-      )}
+      <Hero />
+      <EditorialMarquee />
+      <Chapters />
+      <Gallery />
+      <Footer />
+      <Surprise />
+      <MusicToggle />
     </main>
   );
 }

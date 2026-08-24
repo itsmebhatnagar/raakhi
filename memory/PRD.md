@@ -30,9 +30,10 @@ Follow-up direction: Awwwards-level craft — kinetic hero with masked line-by-l
 - Sealed lock screen (CountdownGate) covers the site until local midnight 28.08.2026: rotating lock seal, live days/hours/minutes/seconds countdown, curtain-lift unlock animation at zero
 - Sender bypass: append ?preview=true ("sender preview" link on the gate, subtle)
 
-### 2026-08-24 (iteration 3) — "From another mother" rewrite + lock lifted
-- All copy rewritten for a chosen-sibling bond (not blood-related): hero sub, chapters 01–03, surprise note ("sister by every single thing that actually matters", signed "your brother, by choice, always"), footer ("the one you chose"), gallery caption
-- Countdown lock TEMPORARILY DISABLED via LOCK_ENABLED=false in CountdownGate.jsx — flip to true to re-seal (user will ask when ready)
+### 2026-08-24 (iteration 4) — Lock dropped + real photos + colour hover
+- Countdown lock feature REMOVED entirely at user's request (component deleted; site always opens directly)
+- Real photos placed in gallery (3 portraits, /public/photos/b.jpg, c.jpg, a.jpg)
+- Gallery photos bloom to full colour on hover, monochrome otherwise
 
 ## Verified
 - curl /api/ → healthy; frontend 200
