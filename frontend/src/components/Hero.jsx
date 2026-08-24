@@ -145,7 +145,7 @@ const Hero = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 3, duration: 1 }}
-        className="absolute bottom-10 left-6 flex items-center gap-4 sm:left-12"
+        className="absolute bottom-10 left-6 hidden items-center gap-4 sm:left-44 sm:flex"
         data-testid="hero-scroll-hint"
       >
         <ArrowDown className="h-4 w-4 animate-bounce" strokeWidth={1.5} />
