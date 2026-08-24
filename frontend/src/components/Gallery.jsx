@@ -22,26 +22,8 @@ const PHOTOS = [
   {
     src: "https://images.unsplash.com/photo-1504275490777-45f30792f13f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2ODh8MHwxfHNlYXJjaHwzfHxibGFjayUyMGFuZCUyMHdoaXRlJTIwcG9ydHJhaXQlMjB2aW50YWdlfGVufDB8fHx8MTc4NzU5ODQ5Mnww&ixlib=rb-4.1.0&q=85",
     caption: "family, chosen",
-    span: "md:col-span-4",
+    span: "md:col-span-4 md:col-start-5 md:mt-16",
     aspect: "aspect-[3/4]",
-  },
-  {
-    src: "https://images.pexels.com/photos/30002351/pexels-photo-30002351.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
-    caption: "the loud laughs",
-    span: "md:col-span-8 md:mt-24",
-    aspect: "aspect-[16/10]",
-  },
-  {
-    src: "https://picsum.photos/id/1027/900/1100?grayscale",
-    caption: "always, di",
-    span: "md:col-span-5",
-    aspect: "aspect-[3/4]",
-  },
-  {
-    src: "https://picsum.photos/id/64/1100/800?grayscale",
-    caption: "us, forever",
-    span: "md:col-span-7 md:mt-28",
-    aspect: "aspect-[4/3]",
   },
 ];
 

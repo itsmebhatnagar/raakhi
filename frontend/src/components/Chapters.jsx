@@ -12,7 +12,7 @@ const CHAPTERS = [
     no: "02",
     title: "Us",
     quote: "Fate forgot to make us siblings — so we went ahead and did it ourselves.",
-    body: "You scold me like family, feed me like family, worry about me like family. No document anywhere says we're related, and yet you know me better than people who have known me since the day I was born. If that's not a sister, the word itself needs fixing.",
+    body: "You scold me like family, worry about me like family. No document anywhere says we're related, and yet you know me better than people who have known me since the day I was born. If that's not a sister, the word itself needs fixing.",
     inverted: true,
   },
   {
