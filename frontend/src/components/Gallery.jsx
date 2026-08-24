@@ -36,7 +36,7 @@ const Frame = ({ photo, index }) => (
           alt={photo.caption}
           loading="lazy"
           data-testid={`gallery-image-${index}`}
-          className="h-full w-full object-cover grayscale transition-transform duration-700 ease-out group-hover:scale-105"
+          className="h-full w-full object-cover grayscale transition-[transform,filter] duration-700 ease-out group-hover:scale-105 group-hover:grayscale-0"
         />
       </div>
       <figcaption className="flex items-baseline justify-between px-1 pb-1 pt-4">
