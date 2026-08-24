@@ -26,6 +26,10 @@ Follow-up direction: Awwwards-level craft — kinetic hero with masked line-by-l
 - Lenis smooth momentum scrolling, film-grain overlay, custom selection/scrollbar
 - Page title/meta updated for sharing
 
+### 2026-08-24 (iteration 2) — Countdown Reveal
+- Sealed lock screen (CountdownGate) covers the site until local midnight 28.08.2026: rotating lock seal, live days/hours/minutes/seconds countdown, curtain-lift unlock animation at zero
+- Sender bypass: append ?preview=true ("sender preview" link on the gate, subtle)
+
 ## Verified
 - curl /api/ → healthy; frontend 200
 - Playwright: hero, marquee, chapters, gallery rendered; surprise overlay open/close; music toggle click; no blocking console errors
