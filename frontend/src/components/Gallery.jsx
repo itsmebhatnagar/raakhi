@@ -8,19 +8,19 @@ import Reveal from "@/components/Reveal";
    ──────────────────────────────────────────────────────────────── */
 const PHOTOS = [
   {
-    src: "https://images.unsplash.com/photo-1506863530036-1efeddceb993?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2ODh8MHwxfHNlYXJjaHwxfHxibGFjayUyMGFuZCUyMHdoaXRlJTIwcG9ydHJhaXQlMjB2aW50YWdlfGVufDB8fHx8MTc4NzU5ODQ5Mnww&ixlib=rb-4.1.0&q=85",
+    src: "/photos/b.jpg",
     caption: "the keeper of secrets",
-    span: "md:col-span-7",
-    aspect: "aspect-[4/3]",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1661292932068-8161765c3940?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2ODh8MHwxfHNlYXJjaHw0fHxibGFjayUyMGFuZCUyMHdoaXRlJTIwcG9ydHJhaXQlMjB2aW50YWdlfGVufDB8fHx8MTc4NzU5ODQ5Mnww&ixlib=rb-4.1.0&q=85",
-    caption: "partner in crime",
-    span: "md:col-span-5 md:mt-32",
+    span: "md:col-span-5",
     aspect: "aspect-[3/4]",
   },
   {
-    src: "https://images.unsplash.com/photo-1504275490777-45f30792f13f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2ODh8MHwxfHNlYXJjaHwzfHxibGFjayUyMGFuZCUyMHdoaXRlJTIwcG9ydHJhaXQlMjB2aW50YWdlfGVufDB8fHx8MTc4NzU5ODQ5Mnww&ixlib=rb-4.1.0&q=85",
+    src: "/photos/c.jpg",
+    caption: "partner in crime",
+    span: "md:col-span-4 md:col-start-8 md:mt-32",
+    aspect: "aspect-[3/4]",
+  },
+  {
+    src: "/photos/a.jpg",
     caption: "family, chosen",
     span: "md:col-span-4 md:col-start-5 md:mt-16",
     aspect: "aspect-[3/4]",

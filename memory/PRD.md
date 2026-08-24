@@ -39,7 +39,7 @@ Follow-up direction: Awwwards-level craft — kinetic hero with masked line-by-l
 - Playwright: hero, marquee, chapters, gallery rendered; surprise overlay open/close; music toggle click; no blocking console errors
 
 ## Backlog
-- P0: User uploads real photos → replace PHOTOS array in Gallery.jsx
-- P1: User's real name as signature (currently generic "your brother, always")
+- DONE: Real photos placed in gallery (3 portraits, served from /public/photos) — 2026-08-24
+- P1: User's real name as signature (currently generic "your brother, by choice, always")
 - P1: Optional real instrumental mp3 instead of WebAudio ambient
 - P2: Mobile-specific envelope-opening gesture; share-preview OG image
