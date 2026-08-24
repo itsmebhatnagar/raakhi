@@ -133,8 +133,9 @@ const Hero = () => {
         </h1>
         <MaskedLine delay={2.4}>
           <p className="mt-12 max-w-md text-base font-light leading-relaxed text-[#0A0A0A]/70 sm:text-lg">
-            A letter written in black &amp; white — because a bond like ours
-            never needed colour to be seen.
+            No shared surname, no shared blood — just a sister I found along
+            the way. A letter in black &amp; white, because a bond like ours
+            never needed colour.
           </p>
         </MaskedLine>
       </motion.div>

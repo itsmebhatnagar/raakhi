@@ -71,18 +71,18 @@ const Surprise = () => {
                 data-testid="surprise-message"
                 className="mt-10 font-serif text-3xl font-light leading-snug sm:text-5xl sm:leading-tight"
               >
-                P.S. — I never say this out loud, so read it here:
+                P.S. — I never say this out loud, so read it here: you're not
+                my sister by blood —
                 <span className="italic">
                   {" "}
-                  you are my favourite person in the whole world.
+                  you're my sister by every single thing that actually matters.
                 </span>{" "}
-                No matter how old we get, you will always be the sister I look
-                up to. I love you, Di.
+                Thank you for choosing me as your brother. I love you, Di.
               </p>
               <div className="mt-14 flex items-center gap-6">
                 <div className="h-px w-16 bg-white/30" />
                 <p className="font-serif text-2xl italic text-white/80">
-                  your brother, always
+                  your brother, by choice, always
                 </p>
               </div>
             </motion.div>

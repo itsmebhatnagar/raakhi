@@ -4,6 +4,7 @@ import { Lock } from "lucide-react";
 import { EASE } from "@/components/Reveal";
 
 export const RAKHI_DATE = new Date("2026-08-28T00:00:00"); // local midnight
+export const LOCK_ENABLED = false; // flip to true to re-seal the letter until midnight
 
 const pad = (n) => String(Math.max(0, n)).padStart(2, "0");
 

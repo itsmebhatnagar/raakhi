@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 import Lenis from "lenis";
-import CountdownGate, { RAKHI_DATE } from "@/components/CountdownGate";
+import CountdownGate, {
+  LOCK_ENABLED,
+  RAKHI_DATE,
+} from "@/components/CountdownGate";
 import Hero from "@/components/Hero";
 import EditorialMarquee from "@/components/EditorialMarquee";
 import Chapters from "@/components/Chapters";
@@ -15,6 +18,7 @@ const GRAIN =
 function App() {
   const [unlocked, setUnlocked] = useState(
     () =>
+      !LOCK_ENABLED ||
       new URLSearchParams(window.location.search).has("preview") ||
       Date.now() >= RAKHI_DATE.getTime(),
   );

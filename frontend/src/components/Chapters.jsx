@@ -4,24 +4,22 @@ const CHAPTERS = [
   {
     no: "01",
     title: "The Thread",
-    quote:
-      "You tie a thread on my wrist and call it protection — but you have been protecting me all along.",
-    body: "Once a year, a simple thread. And yet we both know the truth of it: you were always the one who held everything together. Every storm I walked into, you had already checked the weather for me. Every time I fell, you were the floor before I ever hit the ground.",
+    quote: "Some threads are thicker than blood.",
+    body: "We didn't share a cradle, a surname, or a childhood address. But the day you tied this thread on my wrist, all of that stopped mattering. You became my sister — not by an accident of birth, but by something far rarer: by choice.",
     inverted: false,
   },
   {
     no: "02",
     title: "Us",
-    quote:
-      "We fought over the remote, the front seat, the last bite of everything — and somewhere in all that noise, you became my first best friend.",
-    body: "The one who knew me before I knew myself. Keeper of every secret, witness to every version of me I have ever been. Distance, time, growing up — none of it has ever touched what we are.",
+    quote: "Fate forgot to make us siblings — so we went ahead and did it ourselves.",
+    body: "You scold me like family, feed me like family, worry about me like family. No document anywhere says we're related, and yet you know me better than people who have known me since the day I was born. If that's not a sister, the word itself needs fixing.",
     inverted: true,
   },
   {
     no: "03",
     title: "The Promise",
-    quote: "No gift could ever fit what you have given me. So here is a promise instead.",
-    body: "In every lifetime, in every version of this story — I will find you, and I will stand behind you. Today, tomorrow, always. Happy Raksha Bandhan, Akshita Di.",
+    quote: "Sisters aren't always born into your life. Sometimes they walk in and never leave.",
+    body: "You chose me as your brother, and I intend to earn it every single year. Wherever life takes us — different cities, different decades — this thread stays tied. Happy Raksha Bandhan, Akshita Di.",
     inverted: false,
   },
 ];

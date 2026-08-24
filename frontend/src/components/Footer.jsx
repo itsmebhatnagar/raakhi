@@ -10,7 +10,7 @@ const Footer = () => (
         <h2 className="font-serif text-5xl font-light leading-[0.95] tracking-tight sm:text-8xl">
           With all my love,
           <br />
-          <span className="italic">your brother.</span>
+          <span className="italic">your brother — the one you chose.</span>
         </h2>
       </Reveal>
       <Reveal delay={0.15}>

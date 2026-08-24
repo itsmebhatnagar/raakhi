@@ -21,7 +21,7 @@ const PHOTOS = [
   },
   {
     src: "https://images.unsplash.com/photo-1504275490777-45f30792f13f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2ODh8MHwxfHNlYXJjaHwzfHxibGFjayUyMGFuZCUyMHdoaXRlJTIwcG9ydHJhaXQlMjB2aW50YWdlfGVufDB8fHx8MTc4NzU5ODQ5Mnww&ixlib=rb-4.1.0&q=85",
-    caption: "home, personified",
+    caption: "family, chosen",
     span: "md:col-span-4",
     aspect: "aspect-[3/4]",
   },
