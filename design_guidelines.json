@@ -1,0 +1,139 @@
+{
+  "theme_and_concept": {
+    "name": "Monochrome Editorial",
+    "description": "High-fashion print editorial meets letterpress stationery. A sophisticated, Awwwards-level digital Rakhi card. Strictly black and white.",
+    "emotional_tone": "Elegant, heartfelt, timeless, premium."
+  },
+  "typography": {
+    "fonts": [
+      {
+        "family": "Cormorant Garamond",
+        "type": "Serif",
+        "usage": "Headings, Hero Text, Marquee, Chapter Numbers (Italicized for emphasis)",
+        "import_url": "https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600&display=swap"
+      },
+      {
+        "family": "IBM Plex Sans",
+        "type": "Sans-serif",
+        "usage": "Body copy, captions, small utility labels, buttons",
+        "import_url": "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&display=swap"
+      }
+    ],
+    "hierarchy": {
+      "h1": "text-5xl sm:text-7xl lg:text-[10vw] leading-[0.85] tracking-tighter font-serif font-light",
+      "h2": "text-4xl sm:text-6xl leading-none tracking-tight font-serif",
+      "h3": "text-2xl sm:text-4xl font-serif italic",
+      "body": "text-base sm:text-lg leading-relaxed font-sans font-light",
+      "label": "text-xs tracking-[0.2em] uppercase font-sans font-medium"
+    }
+  },
+  "colors": {
+    "background": "#F8F8F8",
+    "foreground": "#0A0A0A",
+    "surface": "#FFFFFF",
+    "border": "#E5E5E5",
+    "inverted": {
+      "background": "#0A0A0A",
+      "foreground": "#F8F8F8",
+      "border": "#222222"
+    }
+  },
+  "spacing_and_layout": {
+    "section_padding": "py-24 sm:py-32 lg:py-48",
+    "container": "max-w-[1400px] mx-auto px-6 sm:px-12",
+    "grid_strategy": "Asymmetric, heavily utilizing negative space. Avoid center-alignment for body text; favor sharp left-alignments with wide indents (e.g., ml-auto w-2/3) for contrast."
+  },
+  "components_blueprint": [
+    {
+      "name": "Kinetic Hero",
+      "purpose": "First impression. The 'Digital Envelope' reveal.",
+      "layout": "Min-h-screen flex flex-col justify-center items-start pt-32 pb-16 relative",
+      "interactions": {
+        "text_reveal": "Masked line-by-line reveal. Wrap each line of 'For Akshita Di' in an overflow-hidden div, and animate the inner text from y: '100%' to 0% using framer-motion with ease: [0.16, 1, 0.3, 1] and duration 1.2s.",
+        "3d_envelope": "A subtle framer-motion useMotionValue driven 3D tilt effect on a graphic element (like a black rectangle with a thin white border representing a card) floating in the background."
+      }
+    },
+    {
+      "name": "Editorial Marquee",
+      "purpose": "Atmospheric transition.",
+      "layout": "w-full py-12 border-y border-foreground/10 bg-background overflow-hidden",
+      "interactions": "Use react-fast-marquee. Text: 'Happy Raksha Bandhan — Akshita Di —'. Massive font (text-6xl md:text-8xl), serif, very slow speed, purely decorative."
+    },
+    {
+      "name": "Chapter Manifesto (Heartfelt Messages)",
+      "purpose": "The core message, delivered thoughtfully.",
+      "layout": "Grid layout. Left col (col-span-4): Sticky chapter number (01, 02). Right col (col-span-8): The heartfelt message.",
+      "interactions": "Scroll-triggered reveal of text (framer-motion whileInView). The chapter number stays sticky top-32 while scrolling past the right-side text."
+    },
+    {
+      "name": "Gallery Section",
+      "purpose": "Awwwards-style photo display.",
+      "layout": "Tetris bento grid. Mix of landscape and portrait frames. col-span-12 md:col-span-8, col-span-4, etc.",
+      "visuals": "Spotlight/clipped frames: Images wrapped in divs with 1px black borders, padding (p-2 or p-4 inside the frame), and grayscale filter (grayscale transition-all duration-700 hover:grayscale-0). Use elegant placeholder photos."
+    },
+    {
+      "name": "Hidden Surprise Reveal",
+      "purpose": "Delight and exclusivity.",
+      "layout": "A circular 'wax seal' style button in the footer or fixed to the side. Text 'DO NOT OPEN' curving around it using SVG textPath.",
+      "interactions": "On click, triggers a full-screen Framer Motion overlay (AnimatePresence, height 0 to 100vh) displaying a final secret heartfelt message with elegant typography and a closing signature '— Your Brother'."
+    },
+    {
+      "name": "Music Toggle",
+      "purpose": "Auditory ambiance.",
+      "layout": "Fixed bottom-8 right-8 z-50. Circular button, black background, white icon. When playing, the border or an outer dashed ring slowly spins.",
+      "interactions": "Toggles HTML5 Audio element. Soft instrumental placeholder."
+    }
+  ],
+  "motion_and_interactions": {
+    "libraries": ["framer-motion", "lenis"],
+    "easing_curves": {
+      "editorial": "[0.16, 1, 0.3, 1]",
+      "snappy": "[0.25, 1, 0.5, 1]"
+    },
+    "scroll": "Implement Lenis smooth scrolling globally in the root layout. This is MANDATORY for the premium feel."
+  },
+  "media": {
+    "gallery_placeholders": [
+      {
+        "url": "https://images.unsplash.com/photo-1506863530036-1efeddceb993?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2ODh8MHwxfHNlYXJjaHwxfHxibGFjayUyMGFuZCUyMHdoaXRlJTIwcG9ydHJhaXQlMjB2aW50YWdlfGVufDB8fHx8MTc4NzU5ODQ5Mnww&ixlib=rb-4.1.0&q=85",
+        "description": "Grayscale portrait woman"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1661292932068-8161765c3940?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2ODh8MHwxfHNlYXJjaHw0fHxibGFjayUyMGFuZCUyMHdoaXRlJTIwcG9ydHJhaXQlMjB2aW50YWdlfGVufDB8fHx8MTc4NzU5ODQ5Mnww&ixlib=rb-4.1.0&q=85",
+        "description": "Woman portrait minimalist"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1504275490777-45f30792f13f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2ODh8MHwxfHNlYXJjaHwzfHxibGFjayUyMGFuZCUyMHdoaXRlJTIwcG9ydHJhaXQlMjB2aW50YWdlfGVufDB8fHx8MTc4NzU5ODQ5Mnww&ixlib=rb-4.1.0&q=85",
+        "description": "Close up artistic grayscale"
+      },
+      {
+        "url": "https://images.pexels.com/photos/30002351/pexels-photo-30002351.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Vintage girl with camera"
+      }
+    ],
+    "textures": [
+      {
+        "url": "https://images.unsplash.com/photo-1638376776402-9a4b75fe21bb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHwxfHxibGFjayUyMGFuZCUyMHdoaXRlJTIwbWluaW1hbCUyMGFic3RyYWN0fGVufDB8fHx8MTc4NzU5ODQ5Mnww&ixlib=rb-4.1.0&q=85",
+        "usage": "Can be used as a subtle noise/texture overlay with mix-blend-mode or low opacity for the hero 3D card."
+      }
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Install `framer-motion`, `lucide-react`, `lenis`, `react-fast-marquee`.",
+    "Add the Google Fonts to the global CSS or index.html.",
+    "Ensure global layout uses pure black and pure white / very light gray, absolutely NO saturated colors anywhere.",
+    "The kinetic text reveal must use `overflow: hidden` on a wrapper for each line, and animate the `motion.span` inside it. This creates the 'mask' effect.",
+    "Implement Lenis for smooth momentum scrolling. Wrap the App or main content in a Lenis provider component.",
+    "Do not use generic Shadcn cards. Build bespoke, 1px bordered divs with generous internal padding.",
+    "Include a `data-testid` on the music toggle, surprise button, and any other interactive elements.",
+    "Music can be mocked with an empty audio tag or a free royalty-free classical piano mp3 URL. Add instructions in a comment for the user to swap it.",
+    "Add 'data-testid' to all interactive elements, like 'data-testid=\"music-toggle-button\"'."
+  ],
+  "UNIVERSAL_GUIDELINES_FOR_MAIN_AGENT": [
+    "Do not center align everything. Leverage left alignments and massive indents.",
+    "Add generous padding (p-24 or p-32) instead of standard cramped spacings.",
+    "Add subtle micro-interactions on hover (scale, opacity).",
+    "Never use AI assistant emojis for icons. Use lucide-react.",
+    "Always apply transitions carefully to specific properties, avoiding 'transition: all' that breaks transforms."
+  ]
+}
