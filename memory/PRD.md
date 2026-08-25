@@ -35,6 +35,12 @@ Follow-up direction: Awwwards-level craft — kinetic hero with masked line-by-l
 - Real photos placed in gallery (3 portraits, /public/photos/b.jpg, c.jpg, a.jpg)
 - Gallery photos bloom to full colour on hover, monochrome otherwise
 
+### 2026-08-25 — Vercel deploy fixes
+- Root vercel.json rewritten for Vercel "Services" mode: declares only `frontend` service (root: frontend, framework: create-react-app) + catch-all rewrite to it
+- engines: node ">=20" (20.x pin is deprecated on Vercel; resolves to 22 there, local sandbox is 20)
+- date-fns downgraded 4.1.0 → ^3.6.0 to satisfy react-day-picker peer (npm ERESOLVE fix); .npmrc legacy-peer-deps=true as safety
+- Verified: CI=true build clean; npm install --dry-run resolves with exit 0
+
 ## Verified
 - curl /api/ → healthy; frontend 200
 - Playwright: hero, marquee, chapters, gallery rendered; surprise overlay open/close; music toggle click; no blocking console errors
