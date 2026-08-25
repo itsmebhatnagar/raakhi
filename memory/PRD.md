@@ -40,6 +40,7 @@ Follow-up direction: Awwwards-level craft — kinetic hero with masked line-by-l
 - engines: node ">=20" (20.x pin is deprecated on Vercel; resolves to 22 there, local sandbox is 20)
 - date-fns downgraded 4.1.0 → ^3.6.0 to satisfy react-day-picker peer (npm ERESOLVE fix); .npmrc legacy-peer-deps=true as safety
 - Verified: CI=true build clean; npm install --dry-run resolves with exit 0
+- Services-mode vercel.json caused unstyled deploy (CSS/JS not served); reverted root vercel.json to classic static config (yarn install + build, output frontend/build, SPA rewrite). frontend/vercel.json kept for root-directory=frontend deploys.
 
 ## Verified
 - curl /api/ → healthy; frontend 200
